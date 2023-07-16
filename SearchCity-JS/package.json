@@ -5,16 +5,18 @@
   "scripts": {
     "prestart": "npm install",
     "start": "node app.js",
-    "test": "npm install && NODE_ENV=test PORT=8001 ./node_modules/.bin/mocha test --exit -r jsdom-global/register"
+    "test": "cross-env NODE_ENV=test PORT=8001 mocha test --exit -r jsdom-global/register"
   },
   "devDependencies": {
     "chai": "^4.1.0",
     "chai-http": "^3.0.0",
     "chromedriver": "^78.0.1",
+    "cross-env": "^7.0.3",
     "gulp": "^3.9.1",
     "jquery": "^3.2.1",
     "jsdom": "15.2.0",
     "jsdom-global": "3.0.2",
+    "mocha": "^3.5.0",
     "mocha-multi": "^0.11.0",
     "webdriverio": "^4.8.0",
     "whatwg-fetch": "^3.0.0"
@@ -26,7 +28,6 @@
     "chai-as-promised": "^7.1.1",
     "debug": "~2.6.3",
     "express": "^4.17.1",
-    "mocha": "^3.5.0",
     "mocha-junit-reporter": "^1.13.0",
     "mocha-multi-reporters": "^1.1.4",
     "morgan": "^1.8.2",

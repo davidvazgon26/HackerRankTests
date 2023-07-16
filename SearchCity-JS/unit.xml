@@ -1,51 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="2.804" tests="8" failures="7">
-  <testsuite name="Root Suite" timestamp="2023-07-14T21:54:56" tests="0" failures="0" time="0">
+<testsuites name="Mocha Tests" time="3.8400" tests="8" failures="7">
+  <testsuite name="Root Suite" timestamp="2023-07-16T07:32:19" tests="0" time="0.0000" failures="0">
   </testsuite>
-  <testsuite name="city search test" timestamp="2023-07-14T21:54:56" tests="8" file="/projects/challenge/test/test.js" failures="7" time="2.804">
-    <testcase name="city search test Valid input should be provided in the input box - no space no numbers allowed" time="0.183" classname="Valid input should be provided in the input box - no space no numbers allowed">
-      <failure message="expected &apos;Please provide valid input&apos; to equal &apos;Please provide the valid input&apos;" type="AssertionError"><![CDATA[AssertionError: expected 'Please provide valid input' to equal 'Please provide the valid input'
-    at Context.<anonymous> (test/test.js:61:30)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)]]></failure>
+  <testsuite name="city search test" timestamp="2023-07-16T07:32:19" tests="8" file="C:\Users\david\Desktop\HACKERRANK\SearchCity-JS\test\test.js" time="3.8400" failures="7">
+    <testcase name="city search test Valid input should be provided in the input box - no space no numbers allowed" time="0.5680" classname="Valid input should be provided in the input box - no space no numbers allowed">
+      <failure message="expected &apos;\&apos;Please provide the valid input\&apos;&apos; to equal &apos;Please provide the valid input&apos;" type="AssertionError"><![CDATA[AssertionError: expected '\'Please provide the valid input\'' to equal 'Please provide the valid input'
+    at Context.<anonymous> (test\test.js:87:31)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)]]></failure>
     </testcase>
-    <testcase name="city search test After typing invalid input, it should be reset" time="0.144" classname="After typing invalid input, it should be reset">
+    <testcase name="city search test After typing invalid input, it should be reset" time="0.1940" classname="After typing invalid input, it should be reset">
     </testcase>
-    <testcase name="city search test Should search cities and render table on valid input by making sure api is hit" time="0.566" classname="Should search cities and render table on valid input by making sure api is hit">
+    <testcase name="city search test Should search cities and render table on valid input by making sure api is hit" time="0.7160" classname="Should search cities and render table on valid input by making sure api is hit">
       <failure message="expected &apos;&apos; to equal &apos;Total cities found: 10&apos;" type="AssertionError"><![CDATA[AssertionError: expected '' to equal 'Total cities found: 10'
-    at Context.<anonymous> (test/test.js:158:26)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)]]></failure>
+    at Context.<anonymous> (test\test.js:158:26)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)]]></failure>
     </testcase>
-    <testcase name="city search test Should give correct result when no data is returned by the api" time="0.396" classname="Should give correct result when no data is returned by the api">
+    <testcase name="city search test Should give correct result when no data is returned by the api" time="0.4790" classname="Should give correct result when no data is returned by the api">
       <failure message="expected &apos;&apos; to equal &apos;Total cities found: 0&apos;" type="AssertionError"><![CDATA[AssertionError: expected '' to equal 'Total cities found: 0'
-    at Context.<anonymous> (test/test.js:208:26)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)]]></failure>
+    at Context.<anonymous> (test\test.js:208:26)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)]]></failure>
     </testcase>
-    <testcase name="city search test Should give correct result when data is returned by the api - test 1" time="0.371" classname="Should give correct result when data is returned by the api - test 1">
+    <testcase name="city search test Should give correct result when data is returned by the api - test 1" time="0.4700" classname="Should give correct result when data is returned by the api - test 1">
       <failure message="expected &apos;&apos; to equal &apos;Total cities found: 10&apos;" type="AssertionError"><![CDATA[AssertionError: expected '' to equal 'Total cities found: 10'
-    at Context.<anonymous> (test/test.js:259:26)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)]]></failure>
+    at Context.<anonymous> (test\test.js:259:26)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)]]></failure>
     </testcase>
-    <testcase name="city search test Should give correct result when data is returned by the api - test 2" time="0.361" classname="Should give correct result when data is returned by the api - test 2">
+    <testcase name="city search test Should give correct result when data is returned by the api - test 2" time="0.4660" classname="Should give correct result when data is returned by the api - test 2">
       <failure message="expected &apos;&apos; to equal &apos;Total cities found: 10&apos;" type="AssertionError"><![CDATA[AssertionError: expected '' to equal 'Total cities found: 10'
-    at Context.<anonymous> (test/test.js:310:26)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)]]></failure>
+    at Context.<anonymous> (test\test.js:310:26)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)]]></failure>
     </testcase>
-    <testcase name="city search test Should give correct result when data is returned by the api - test 3" time="0.399" classname="Should give correct result when data is returned by the api - test 3">
-      <failure message="expected &apos;&apos; to equal &apos;Total cities found: 10&apos;" type="AssertionError"><![CDATA[AssertionError: expected '' to equal 'Total cities found: 10'
-    at Context.<anonymous> (test/test.js:361:26)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)]]></failure>
-    </testcase>
-    <testcase name="city search test Should give correct result when data is returned by the api - test 4" time="0.384" classname="Should give correct result when data is returned by the api - test 4">
+    <testcase name="city search test Should give correct result when data is returned by the api - test 3" time="0.4780" classname="Should give correct result when data is returned by the api - test 3">
       <failure message="expected &apos;&apos; to equal &apos;Total cities found: 0&apos;" type="AssertionError"><![CDATA[AssertionError: expected '' to equal 'Total cities found: 0'
-    at Context.<anonymous> (test/test.js:412:26)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)]]></failure>
+    at Context.<anonymous> (test\test.js:361:26)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)]]></failure>
+    </testcase>
+    <testcase name="city search test Should give correct result when data is returned by the api - test 4" time="0.4690" classname="Should give correct result when data is returned by the api - test 4">
+      <failure message="expected &apos;&apos; to equal &apos;Total cities found: 0&apos;" type="AssertionError"><![CDATA[AssertionError: expected '' to equal 'Total cities found: 0'
+    at Context.<anonymous> (test\test.js:412:26)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)]]></failure>
     </testcase>
   </testsuite>
 </testsuites>

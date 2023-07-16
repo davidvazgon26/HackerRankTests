@@ -9,6 +9,7 @@ app.get("/demo", (req, res) => {
 });
 
 app.listen(process.env.PORT || 8001, "0.0.0.0", function () {
+  console.log("Got page");
   console.log("Se levanto el servicio en el puerto: 8001");
 });
 module.exports = app;
