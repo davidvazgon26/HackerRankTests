@@ -12,10 +12,25 @@ boton.addEventListener("click", async () => {
 
     if (isValid) {
       alert("'Please provide the valid input'");
+      return;
     }
     console.log("no entro");
+    Search(inputValue)
   }
 });
+
+
+const Search = (text)=>{
+
+   var url = 'https://jsonmock.hackerrank.com/api/cities/?city=' + searchText;
+    fetch(url)
+      .then(function(response) {
+        return response.json();
+      })
+      .then(function(data) {
+        var cities = data.data;
+  
+}
 
 /*
 
